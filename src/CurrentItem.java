@@ -5,6 +5,11 @@ public class CurrentItem implements Item {
     private boolean isExempt = false;
     private double initPrice;
 
+    public CurrentItem(String name, double initPrice) {
+        this.name = name;
+        this.initPrice = initPrice;
+    }
+
     public String getName() {
         return name;
     }
@@ -47,16 +52,20 @@ public class CurrentItem implements Item {
 
         if (obj == null) {
             return false;
-        } else if (obj instanceof Item) {
+        }
+
+        else if (obj instanceof Item) {
             return (obj.hashCode() == this.hashCode());
 
-        } else
+        }
+
+        else {
             return false;
+        }
     }
 
     @Override
     public double getPrice() {
         return this.initPrice;
     }
-
 }
