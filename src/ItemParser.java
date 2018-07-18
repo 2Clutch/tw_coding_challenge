@@ -36,6 +36,7 @@ public class ItemParser {
     }
 
     public static boolean matches(String description) {
+
         return Pattern.matches(ITEM_DESCRIPTION_REGEX, description);
     }
 }

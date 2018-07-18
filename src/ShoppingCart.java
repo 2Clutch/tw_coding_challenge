@@ -38,16 +38,16 @@ public class ShoppingCart {
         return itemMap.get(item);
     }
 
-    public double getTaxtotal() {
-        double taxtotal = 0;
+    public double getTaxTotal() {
+        double taxTotal = 0;
 
         for (Item item : itemMap.keySet()){
             double subTotal = item.getPrice() * getQuantity(item);
             double subInitTotal = item.getInitPrice() * getQuantity(item);
-            taxtotal += subTotal - subInitTotal;
+            taxTotal += subTotal - subInitTotal;
         }
 
-        return taxtotal;
+        return taxTotal;
     }
 
     public double getTotal() {
@@ -72,7 +72,7 @@ public class ShoppingCart {
     }
 
     public void printOrderResults() {
-        double taxtotal = 0;
+        double taxTotal = 0;
         double total = 0;
         System.out.println("Order results: ");
 
@@ -81,14 +81,14 @@ public class ShoppingCart {
         for (Item item : taxedItems){
             double subTotal = item.getPrice() * getQuantity(item);
             double subInitTotal = item.getInitPrice() * getQuantity(item);
-            taxtotal += subTotal - subInitTotal;
+            taxTotal += subTotal - subInitTotal;
             total += subTotal;
             System.out.println(getQuantity(item) + " " + item.getName() + ": " + df.format(subTotal));
         }
 
         total = Processor.roundPrice(total);
-        System.out.println("Sales Taxes: "+df.format(taxtotal));
-        System.out.println("Total: "+df.format(total));
+        System.out.println("Sales Taxes: " + df.format(taxTotal));
+        System.out.println("Total: " + df.format(total));
         System.out.println();
     }
 

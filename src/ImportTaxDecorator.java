@@ -36,7 +36,7 @@ public class ImportTaxDecorator extends TaxDecorator {
         if (obj == null) {
             return false;
         } else if (obj instanceof Item) {
-            return (((Item) obj).hashCode() == this.hashCode());
+            return (obj.hashCode() == this.hashCode());
 
         } else
             return false;
