@@ -95,8 +95,8 @@ public class ShoppingCart {
     public static void main(String[] args) {
 
         if(args.length == 0) {
-            System.out.println("Proper Usage is: java -jar salestax filename(s)");
-            System.out.println("example: java -jar salestax inp1.txt inp2.txt");
+            System.out.println("Proper Usage is: java -jar ShoppingCart filename(s)");
+            System.out.println("example: java -jar ShoppingCart inp1.txt inp2.txt");
             System.exit(0);
         }
 
