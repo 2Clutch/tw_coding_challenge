@@ -1,5 +1,7 @@
 # tw_coding_challenge
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/43cc1dda3e074b048d4c72d3af1744d4)](https://app.codacy.com/app/2Clutch/tw_coding_challenge?utm_source=github.com&utm_medium=referral&utm_content=2Clutch/tw_coding_challenge&utm_campaign=badger)
+
 Sales Taxes
  
 Basic sales tax is applicable at a rate of 10% on all goods, except books, food, and medical products that are exempt. Import duty is an additional sales tax applicable on all imported goods at a rate of 5%, with no exemptions.
