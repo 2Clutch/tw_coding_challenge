@@ -1,6 +1,7 @@
 # tw_coding_challenge
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43cc1dda3e074b048d4c72d3af1744d4)](https://app.codacy.com/app/2Clutch/tw_coding_challenge?utm_source=github.com&utm_medium=referral&utm_content=2Clutch/tw_coding_challenge&utm_campaign=badger)
+[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/2Clutch/knowledge-purse)
 
 Sales Taxes
  
